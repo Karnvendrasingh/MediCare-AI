@@ -1,119 +1,36 @@
-👀 MediCare AI
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-MediCare AI is a modern Next.js-based web application that combines AI-powered health analysis, voice symptom recognition, and information about Indian government healthcare schemes such as Ayushman Bharat and Jan Aushadhi Yojana.
+## Getting Started
 
-🚀 Features
+First, run the development server:
 
-🎙️ Voice Recognition – Speak your symptoms, and the app transcribes them in real-time
-
-🧠 AI Symptom Analysis – Simulated intelligent health insight based on symptom input
-
-🏥 Govt. Scheme Directory – Dynamic listing of Bharat health schemes using an external API
-
-📍 Find Nearby Hospitals
-
-📄 Medical Records Storage (UI only)
-
-👨‍⚕️ Doctor Directory (placeholder)
-
-💪 Tech Stack
-
-Next.js 14+
-
-React
-
-Tailwind CSS
-
-[OpenAI API (optional integration)]
-
-Mocki.io (or real backend API)
-
-📦 Getting Started
-
-1. Clone the Repository
-
-git clone https://github.com/yourusername/medicare-ai.git
-cd medicare-ai
-
-2. Install Dependencies
-
-npm install
-# or
-yarn
-
-3. Set Environment Variables (Optional for AI/DB)
-
-If you're using OpenAI API or Firebase:
-
-# .env.local
-OPENAI_API_KEY=your_key_here
-
-4. Run the Development Server
-
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Visit http://localhost:3000 to view the app.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-🌐 Live API for Health Schemes
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-To pull government schemes dynamically, the app fetches from:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-https://mocki.io/v1/your-api-id  # <-- Replace with your real endpoint
+## Learn More
 
-You can replace this with a real backend (e.g., Node.js, Supabase, Firebase).
+To learn more about Next.js, take a look at the following resources:
 
-🧐 Project Structure
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-src/
-│
-├── app/
-│   ├── page.tsx                # Homepage
-│   ├── speech-analysis/        # Voice AI page
-│   ├── medical-schemes/        # Govt schemes page (dynamic API)
-│   └── ...
-│
-├── components/
-│   ├── Header.tsx
-│   ├── Footer.tsx
-│   ├── FeatureCard.tsx
-│   └── ...
-│
-├── public/
-│   └── data/schemes.json       # (used in mock API)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-📖 Add Government Health Schemes
+## Deploy on Vercel
 
-You can:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Update public/data/schemes.json (for local)
-
-Or use a tool like Mocki to host it publicly
-
-Or build a real backend
-
-🎯 Future Improvements
-
-🔐 Auth and medical record storage (Firebase/Supabase)
-
-🧪 OpenAI integration for real symptom processing
-
-🌍 Multilingual support (Hindi, Tamil, etc.)
-
-🦴 Live hospital & doctor API integration
-
-👥 Contributing
-
-Pull requests welcome! If you’d like to help improve this project or add Indian government APIs, feel free to contribute.
-
-📄 License
-
-MIT License
-
-🇮🇳 Jai Hind
-
-This project aims to help Indian citizens access AI-powered healthcare information and awareness about government schemes.
-
-वन्दे मातरम्।
-
-বন্দে মাতরম্৷
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
